@@ -1,0 +1,11 @@
+D:\C# Practice\BusinessAutomationApp\BusinessAutomation.Models\bin\Debug\net7.0\BusinessAutomation.Models.deps.json
+D:\C# Practice\BusinessAutomationApp\BusinessAutomation.Models\bin\Debug\net7.0\BusinessAutomation.Models.dll
+D:\C# Practice\BusinessAutomationApp\BusinessAutomation.Models\bin\Debug\net7.0\BusinessAutomation.Models.pdb
+D:\C# Practice\BusinessAutomationApp\BusinessAutomation.Models\obj\Debug\net7.0\BusinessAutomation.Models.GeneratedMSBuildEditorConfig.editorconfig
+D:\C# Practice\BusinessAutomationApp\BusinessAutomation.Models\obj\Debug\net7.0\BusinessAutomation.Models.AssemblyInfoInputs.cache
+D:\C# Practice\BusinessAutomationApp\BusinessAutomation.Models\obj\Debug\net7.0\BusinessAutomation.Models.AssemblyInfo.cs
+D:\C# Practice\BusinessAutomationApp\BusinessAutomation.Models\obj\Debug\net7.0\BusinessAutomation.Models.csproj.CoreCompileInputs.cache
+D:\C# Practice\BusinessAutomationApp\BusinessAutomation.Models\obj\Debug\net7.0\BusinessAutomation.Models.dll
+D:\C# Practice\BusinessAutomationApp\BusinessAutomation.Models\obj\Debug\net7.0\refint\BusinessAutomation.Models.dll
+D:\C# Practice\BusinessAutomationApp\BusinessAutomation.Models\obj\Debug\net7.0\BusinessAutomation.Models.pdb
+D:\C# Practice\BusinessAutomationApp\BusinessAutomation.Models\obj\Debug\net7.0\ref\BusinessAutomation.Models.dll

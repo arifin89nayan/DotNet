@@ -1,0 +1,45 @@
+﻿@using BusinessAutomationApp.Models.Customer;
+@model CustomerList
+@{
+    //int SlNo = 0;
+    //var CustomerList = ViewBag.CustomerList;
+}
+<h1>Customer List</h1>
+<div class="card">
+    <div class="card-header">
+        @Model.company.companyName
+    </div>
+  
+  <div class="card-body">
+    <h5 class="card-title">@Model.company.companyName</h5>
+        <p class="card-text">ID:@Model.company.companyIt</p>
+    <p class="card-text">Location:@Model.company.companyLocation</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Phone</th>
+            <th scope="col">Email</th>
+        </tr>
+    </thead>
+    
+    <tbody>
+        @foreach (var customer in Model.customer)
+        {
+            <tr>
+                <td>@customer.Id</td>
+                <td>@customer.Name</td>
+                <td>@customer.Phone</td>
+                <td>@customer.Email</td>
+                <td>View | <a asp-action="Edit" asp-route-id="@customer.Id">Edit</a>  |<a asp-action="Remove" asp-route-id="@customer.Id">Remove</a> </td>
+            </tr>
+        }
+
+    </tbody>
+    
+     
+</table>

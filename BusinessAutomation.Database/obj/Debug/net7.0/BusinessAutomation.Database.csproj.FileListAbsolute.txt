@@ -1,0 +1,17 @@
+D:\C# Practice\BusinessAutomationApp\BusinessAutomation.Database\bin\Debug\net7.0\BusinessAutomation.Database.deps.json
+D:\C# Practice\BusinessAutomationApp\BusinessAutomation.Database\bin\Debug\net7.0\BusinessAutomation.Database.runtimeconfig.json
+D:\C# Practice\BusinessAutomationApp\BusinessAutomation.Database\bin\Debug\net7.0\BusinessAutomation.Database.dll
+D:\C# Practice\BusinessAutomationApp\BusinessAutomation.Database\bin\Debug\net7.0\BusinessAutomation.Database.pdb
+D:\C# Practice\BusinessAutomationApp\BusinessAutomation.Database\bin\Debug\net7.0\BusinessAutomation.Models.dll
+D:\C# Practice\BusinessAutomationApp\BusinessAutomation.Database\bin\Debug\net7.0\BusinessAutomation.Models.pdb
+D:\C# Practice\BusinessAutomationApp\BusinessAutomation.Database\obj\Debug\net7.0\BusinessAutomation.Database.csproj.AssemblyReference.cache
+D:\C# Practice\BusinessAutomationApp\BusinessAutomation.Database\obj\Debug\net7.0\BusinessAutomation.Database.GeneratedMSBuildEditorConfig.editorconfig
+D:\C# Practice\BusinessAutomationApp\BusinessAutomation.Database\obj\Debug\net7.0\BusinessAutomation.Database.AssemblyInfoInputs.cache
+D:\C# Practice\BusinessAutomationApp\BusinessAutomation.Database\obj\Debug\net7.0\BusinessAutomation.Database.AssemblyInfo.cs
+D:\C# Practice\BusinessAutomationApp\BusinessAutomation.Database\obj\Debug\net7.0\BusinessAutomation.Database.csproj.CoreCompileInputs.cache
+D:\C# Practice\BusinessAutomationApp\BusinessAutomation.Database\obj\Debug\net7.0\BusinessAutomation.Database.csproj.CopyComplete
+D:\C# Practice\BusinessAutomationApp\BusinessAutomation.Database\obj\Debug\net7.0\BusinessAutomation.Database.dll
+D:\C# Practice\BusinessAutomationApp\BusinessAutomation.Database\obj\Debug\net7.0\refint\BusinessAutomation.Database.dll
+D:\C# Practice\BusinessAutomationApp\BusinessAutomation.Database\obj\Debug\net7.0\BusinessAutomation.Database.pdb
+D:\C# Practice\BusinessAutomationApp\BusinessAutomation.Database\obj\Debug\net7.0\BusinessAutomation.Database.genruntimeconfig.cache
+D:\C# Practice\BusinessAutomationApp\BusinessAutomation.Database\obj\Debug\net7.0\ref\BusinessAutomation.Database.dll
