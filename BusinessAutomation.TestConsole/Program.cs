@@ -1,7 +1,9 @@
 ﻿using BusinessAutomation.Models.EntityModels;
+using BusinessAutomation.Models.UtilitysModels;
 using BusinessAutomationApp.Database;
 using BusinessAutomtion.Repositories;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -31,19 +33,30 @@ class Program
                       select new{p.Name,p.SalesPrice,b.BrandName };*/
         //var brands = db.Brands.Include(p=>p.Products.Where(x=>x.SalesPrice>10000 && x.SalesPrice<=15000));
         //var products = db.Products.Include(b => b.Brand).Where(x => x.SalesPrice > 10000 && x.SalesPrice <= 15000);
-        var exitingProducts = from p in db.Products
+        /*var exitingProducts = from p in db.Products
                               join b in db.Brands on p.BrandId equals b.Id
                               where (p.SalesPrice > 10000 && p.SalesPrice <= 15000)
                               select new {p.Name, p.Brand.BrandName,p.SalesPrice };
                               //from prodbrand in pb.DefaultIfEmpty()
                              // .Where(p=>p.SalesPrice > 10000 && p.SalesPrice <= 15000);
-                            //select new Product() { Name=p.Name,Id=p.Id,SalesPrice=p.SalesPrice,Brand=prodbrand};
+                            //select new Product() { Name=p.Name,Id=p.Id,SalesPrice=p.SalesPrice,Brand=prodbrand};*/
+        Console.WriteLine("Enter Search Key...");
+        string searchKey = Console.ReadLine();
+        double? fromprice= null;
+        double? toprice= 10000;
+        var searchValue = new ProductSearch()
+        {
+            SearchKey = searchKey,
+            ToPrice=toprice,
+            FromPrice=fromprice
+        };
+        var exitingProducts = productsRepository.SearchProduct(searchValue);
 
        if (exitingProducts != null)
         {
             foreach(var product in exitingProducts)
             {
-                Console.WriteLine(product);
+                Console.WriteLine(product.GetInfo());
             }
             
         }

@@ -1,8 +1,3 @@
-D:\C# Practice\BusinessAutomationApp\BusinessAutomtion.Repositories\obj\Debug\net7.0\BusinessAutomtion.Repositories.csproj.AssemblyReference.cache
-D:\C# Practice\BusinessAutomationApp\BusinessAutomtion.Repositories\obj\Debug\net7.0\BusinessAutomtion.Repositories.GeneratedMSBuildEditorConfig.editorconfig
-D:\C# Practice\BusinessAutomationApp\BusinessAutomtion.Repositories\obj\Debug\net7.0\BusinessAutomtion.Repositories.AssemblyInfoInputs.cache
-D:\C# Practice\BusinessAutomationApp\BusinessAutomtion.Repositories\obj\Debug\net7.0\BusinessAutomtion.Repositories.AssemblyInfo.cs
-D:\C# Practice\BusinessAutomationApp\BusinessAutomtion.Repositories\obj\Debug\net7.0\BusinessAutomtion.Repositories.csproj.CoreCompileInputs.cache
 D:\C# Practice\BusinessAutomationApp\BusinessAutomtion.Repositories\bin\Debug\net7.0\BusinessAutomtion.Repositories.deps.json
 D:\C# Practice\BusinessAutomationApp\BusinessAutomtion.Repositories\bin\Debug\net7.0\BusinessAutomtion.Repositories.dll
 D:\C# Practice\BusinessAutomationApp\BusinessAutomtion.Repositories\bin\Debug\net7.0\BusinessAutomtion.Repositories.pdb
@@ -10,6 +5,11 @@ D:\C# Practice\BusinessAutomationApp\BusinessAutomtion.Repositories\bin\Debug\ne
 D:\C# Practice\BusinessAutomationApp\BusinessAutomtion.Repositories\bin\Debug\net7.0\BusinessAutomation.Models.dll
 D:\C# Practice\BusinessAutomationApp\BusinessAutomtion.Repositories\bin\Debug\net7.0\BusinessAutomation.Database.pdb
 D:\C# Practice\BusinessAutomationApp\BusinessAutomtion.Repositories\bin\Debug\net7.0\BusinessAutomation.Models.pdb
+D:\C# Practice\BusinessAutomationApp\BusinessAutomtion.Repositories\obj\Debug\net7.0\BusinessAutomtion.Repositories.csproj.AssemblyReference.cache
+D:\C# Practice\BusinessAutomationApp\BusinessAutomtion.Repositories\obj\Debug\net7.0\BusinessAutomtion.Repositories.GeneratedMSBuildEditorConfig.editorconfig
+D:\C# Practice\BusinessAutomationApp\BusinessAutomtion.Repositories\obj\Debug\net7.0\BusinessAutomtion.Repositories.AssemblyInfoInputs.cache
+D:\C# Practice\BusinessAutomationApp\BusinessAutomtion.Repositories\obj\Debug\net7.0\BusinessAutomtion.Repositories.AssemblyInfo.cs
+D:\C# Practice\BusinessAutomationApp\BusinessAutomtion.Repositories\obj\Debug\net7.0\BusinessAutomtion.Repositories.csproj.CoreCompileInputs.cache
 D:\C# Practice\BusinessAutomationApp\BusinessAutomtion.Repositories\obj\Debug\net7.0\BusinessAutomtion.Repositories.csproj.CopyComplete
 D:\C# Practice\BusinessAutomationApp\BusinessAutomtion.Repositories\obj\Debug\net7.0\BusinessAutomtion.Repositories.dll
 D:\C# Practice\BusinessAutomationApp\BusinessAutomtion.Repositories\obj\Debug\net7.0\refint\BusinessAutomtion.Repositories.dll
