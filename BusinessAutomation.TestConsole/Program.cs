@@ -14,7 +14,7 @@ class Program
         ProductsRepository productsRepository = new ProductsRepository();
         BrandRepository brandRepository = new BrandRepository();
 
-        BusinessAutomationDbContext db =new BusinessAutomationDbContext();
+        BusinessAutomationDbContext db = new BusinessAutomationDbContext();
         /* var products = db.Products
              .Include(c=>c.Brand)
             .Where(c=>c.BrandId==1)
@@ -26,13 +26,22 @@ class Program
         //Linq
         //var products = db.Products.Where(c => c.SalesPrice > 10000 && c.SalesPrice <= 15000);
         //Joining
-        var products=from p in db.Products join
-                     b in db.Brands on p.BrandId equals b.Id
-                     select new{p.Name,p.SalesPrice,b.BrandName };
+        /* var products=from p in db.Products join
+                      b in db.Brands on p.BrandId equals b.Id
+                      select new{p.Name,p.SalesPrice,b.BrandName };*/
+        //var brands = db.Brands.Include(p=>p.Products.Where(x=>x.SalesPrice>10000 && x.SalesPrice<=15000));
+        //var products = db.Products.Include(b => b.Brand).Where(x => x.SalesPrice > 10000 && x.SalesPrice <= 15000);
+        var exitingProducts = from p in db.Products
+                              join b in db.Brands on p.BrandId equals b.Id
+                              where (p.SalesPrice > 10000 && p.SalesPrice <= 15000)
+                              select new {p.Name, p.Brand.BrandName,p.SalesPrice };
+                              //from prodbrand in pb.DefaultIfEmpty()
+                             // .Where(p=>p.SalesPrice > 10000 && p.SalesPrice <= 15000);
+                            //select new Product() { Name=p.Name,Id=p.Id,SalesPrice=p.SalesPrice,Brand=prodbrand};
 
-       if(products != null)
+       if (exitingProducts != null)
         {
-            foreach(var product in products)
+            foreach(var product in exitingProducts)
             {
                 Console.WriteLine(product);
             }
