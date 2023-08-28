@@ -13,10 +13,35 @@ class Program
 {
     public static void Main(string[] args)
     {
+        BusinessAutomationDbContext db = new BusinessAutomationDbContext();
         ProductsRepository productsRepository = new ProductsRepository();
         BrandRepository brandRepository = new BrandRepository();
+        CustomerRepository customerRepository = new CustomerRepository();
+        CategoryRepository categoryRepository = new CategoryRepository();
+        /*var customer = new Customer();
+        {
+            Name = "Rimon",
+            Phone = "01792119633",
+            Email = "Rimon@yahoo.com",
+            Address = "Uttara Dhaka-1230"
+        };*/
+        //bool IsSuccess=customerRepository.Add(customer);
+        var category = new Category()
+        {
+            CategoryName = "Phone",
+            CategoryDescription = "Diffrent kind of Phone now in market"
+        };
+        //bool IsSuccess = categoryRepository.Add(category);
+        //Customer Remove from database
+        var customer = db.Customers.FirstOrDefault(c => c.Id ==2);
+      
+        if (customer!=null)
+        {
+            customerRepository.Remove(customer);
+            Console.WriteLine("Customer remove!..");
+        }
 
-        BusinessAutomationDbContext db = new BusinessAutomationDbContext();
+        
         /* var products = db.Products
              .Include(c=>c.Brand)
             .Where(c=>c.BrandId==1)
@@ -40,7 +65,8 @@ class Program
                               //from prodbrand in pb.DefaultIfEmpty()
                              // .Where(p=>p.SalesPrice > 10000 && p.SalesPrice <= 15000);
                             //select new Product() { Name=p.Name,Id=p.Id,SalesPrice=p.SalesPrice,Brand=prodbrand};*/
-        Console.WriteLine("Enter Search Key...");
+
+        /*Console.WriteLine("Enter Search Key...");
         string searchKey = Console.ReadLine();
         double? fromprice= null;
         double? toprice= 10000;
@@ -59,7 +85,7 @@ class Program
                 Console.WriteLine(product.GetInfo());
             }
             
-        }
+        }*/
         /* var exitbrand = brandRepository.GetById(1);
          if (exitbrand == null)
          {

@@ -10,6 +10,7 @@ namespace BusinessAutomation.Models.EntityModels
         public string Phone { get; set; }
         public string? Email { get; set; }
         public string? Address { get; set; }
+      //  public List<Customer> Customers { get; set; }
 
     }
 }

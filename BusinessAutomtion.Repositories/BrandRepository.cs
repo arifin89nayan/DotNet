@@ -1,5 +1,6 @@
 ﻿using BusinessAutomation.Models.EntityModels;
 using BusinessAutomationApp.Database;
+using BusinessAutomtion.Repositories.Base;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,40 +9,25 @@ using System.Threading.Tasks;
 
 namespace BusinessAutomtion.Repositories
 {
-    public class BrandRepository
+    public class BrandRepository : BaseRepository<Brand>
     {
         
             BusinessAutomationDbContext db;
             public BrandRepository()
             {
                 db = new BusinessAutomationDbContext();
+                _db = db;
             }
-        public BusinessAutomationDbContext Db
-        {
-            get { return db; }
-            set { db = value; }
-        }
-
-        public bool Add(Brand brand)
+            public BusinessAutomationDbContext Db
             {
-                db.Brands.Add(brand);
-                return db.SaveChanges() > 0;
+                get { return db; }
+                set { db = value; }
             }
-
-            public Brand GetById(int id)
+            public ICollection<Brand> GetAll()
             {
-
-                var exitingProduct = db.Brands.FirstOrDefault(p => p.Id == id);
-                return exitingProduct;
-
-
+                return db.Brands.ToList();
             }
 
-            public bool Update(Brand brand)
-            {
-                db.Brands.Update(brand);
-                return db.SaveChanges() > 0;
-            }
         }
     
 }

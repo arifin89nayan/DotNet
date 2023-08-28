@@ -1,45 +1,32 @@
 ﻿using BusinessAutomation.Models.EntityModels;
 using BusinessAutomation.Models.UtilitysModels;
 using BusinessAutomationApp.Database;
+using BusinessAutomtion.Repositories.Base;
 using Microsoft.EntityFrameworkCore;
 //using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 
 namespace BusinessAutomtion.Repositories
 {
-    public class ProductsRepository
+    public class ProductsRepository : BaseRepository<Product> 
     {
         BusinessAutomationDbContext db;
         public ProductsRepository()
         {
                 db = new BusinessAutomationDbContext();
+               _db = db;
         }
         public BusinessAutomationDbContext Db
         {
             get { return db; }
             set { db = value; }
         }
-        public bool Add(Product products)
-        {
-            db.Products.Add(products);
-            return db.SaveChanges()>0;
-        }
-
         public Product GetById(int id)
         {
-           
                 var exitingProduct = db.Products.FirstOrDefault(p => p.Id == id);
                 return exitingProduct;
 
-            
-        }
-
-        public bool Update(Product products)
-        {
-            db.Products.Update(products);
-            return db.SaveChanges() > 0;
-        }
-       
+        }  
         public ICollection<Product> SearchProduct(ProductSearch productSearch)
         {
             var searchKey = productSearch.SearchKey;
